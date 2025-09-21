@@ -365,7 +365,7 @@ const HueMeApp = () => {
         }
     };
 
-    const handleTouchEnd = (e) => {
+    const handleTouchEnd = () => {
         if (photoRef.current) {
             photoRef.current.isDragging = false;
             photoRef.current.startDistance = null;
@@ -391,7 +391,7 @@ const HueMeApp = () => {
         setPhotoTransform(constrainedTransform);
     };
 
-    const handleMouseUp = (e) => {
+    const handleMouseUp = () => {
         if (photoRef.current) {
             photoRef.current.isDragging = false;
         }
